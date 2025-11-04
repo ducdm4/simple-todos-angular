@@ -1,0 +1,14 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+</head>
+<body>
+  <div class="form-container">
+    <h2>Input anything you need to do</h2>
+      <input type="text" id="userInput" placeholder="Type " [(ngModel)]="itemInput" required />
+      <button (click)="navigateToHome()" style="margin-right: 12px;background-color: #f69d5e;">Back</button>
+      <button (click)="handleAddItem()" style="background-color: #4caf50;">Submit</button>
+  </div>
+
+</body>
