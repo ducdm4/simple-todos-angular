@@ -1,36 +1,8 @@
 <div class="">
   <h2>To do list</h2>
-  @if (appState.listToDo().length > 0) {
-<div>
-    @for (item of appState.listToDo(); track item; let idx = $index) {
-      <div class="item-container">
-        <span>{{ idx + 1 }}) {{ item }}</span>
-        <button (click)="markItemDone(idx)">Mark as done</button>
-
-      </div>
-    }
-  </div>
-  } @else {
-    <p>No item yet</p>
-  }
+  <app-list />
   
   <div>
     <a routerLink="/create">Create new item</a>
   </div>
 </div>
-<style lang="scss">
-.item-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 700px;
-  margin-bottom: 6px;
-
-  button {
-    background-color: green;
-  }
-  span {
-    font-size: 20px;
-  }
-}
-</style>

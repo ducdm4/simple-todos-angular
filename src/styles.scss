@@ -57,3 +57,17 @@ button:hover {
 button:active {
   transform: translateY(0);
 }
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 700px;
+  margin-bottom: 6px;
+
+  button {
+    background-color: green;
+  }
+  span {
+    font-size: 20px;
+  }
+}
